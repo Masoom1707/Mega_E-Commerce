@@ -1,0 +1,64 @@
+import Rating from "@mui/material/Rating";
+import { useState } from "react";
+import { FaRegHeart } from "react-icons/fa";
+import { LuShoppingCart } from "react-icons/lu";
+
+const ProductDetailInfo = () => {
+  const [quantity, setQuantity] = useState(1);
+  const handleIncQuantity = () => setQuantity(quantity + 1);
+  const handleDecQuantity = () => {
+    if (quantity > 1) setQuantity(quantity - 1);
+  };
+
+  const [addCart, setAddCart] = useState(false);
+  const handleCart = () => setAddCart(true);
+
+  return (
+    <div className="product_info_detail">
+      <h1>ChickenKari Women Kurta</h1>
+      <Rating name="size-small" defaultValue={4} size="small" readOnly />
+      <div className="product_detail-price_container">
+        <h3>$1200</h3>
+        <h5>
+          M.R.P:- <span>$1599</span>
+        </h5>
+        <p>Inclusive of all taxes</p>
+      </div>
+      <div className="discription">
+        <div className="stock">
+          <h5>in stock</h5>
+        </div>
+        <h4>About Product</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae,
+          aliquid aliquam voluptatum quia labore ut dolor laudantium dolorem
+          reprehenderit nam sunt facere, illo eveniet iure recusandae molestias
+          nemo. Amet, mollitia. Exercitationem sit reprehenderit accusamus neque
+          tempora aliquid amet nihil, hic enim deserunt vel inventore
+          distinctio, voluptatibus porro ut sunt impedit!
+        </p>
+      </div>
+      <div className="sizes">
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+        <button>XXL</button>
+      </div>
+      <div className="quantity-container">
+        <div className="quantity">
+          <button onClick={handleDecQuantity}>-</button>
+          <p>{quantity}</p>
+          <button onClick={handleIncQuantity}>+</button>
+        </div>
+        <button className="product_detail_cart" onClick={handleCart}>
+          <LuShoppingCart style={{ fontSize: "1vw" }} />
+          {addCart ? "Item Added" : "Add to Cart"}
+        </button>
+        <FaRegHeart style={{ fontSize: "1.2vw", cursor: "pointer" }} />
+      </div>
+    </div>
+  );
+};
+
+export default ProductDetailInfo;

@@ -79,3 +79,12 @@
     margin-left: 0.5vw;
     border-radius: 3px;
 }
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 2vw 0;
+}
+
+.Mui-selected.MuiPaginationItem-page{background-color: #7b17c2;}

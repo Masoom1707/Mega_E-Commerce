@@ -28,9 +28,11 @@ const ProductListingPage = () => {
           <ProductList />
           <ProductList />
         </div>
+
         <div className="pagination">
         <Pagination count={10} showFirstButton showLastButton />
         </div>
+        
         </div>
         
       </div>

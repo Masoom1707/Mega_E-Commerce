@@ -1,0 +1,115 @@
+.product_detail_container{
+    display: flex;
+    padding: 3vw 4vw;
+    gap: 2vw;
+}
+
+.product_image_sidebar{
+    flex-basis: 25%;
+}
+
+.product_info_detail{
+    padding: 1vw;
+    flex-basis: 65%;
+
+}
+
+.productImageFrame{
+    width: 100%;
+    height: 22vw;
+    background-color: gold;
+}
+
+.image_options_container{
+    display: flex;
+    gap: 0.4vw;
+    padding: 1vw 0;
+}
+
+.image_option{
+    width: 25%;
+    height: 5vw;
+    background-color: lawngreen;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+.active_image{
+    border: 3px solid black;
+}
+.product_detail-price_container{
+    & h5{
+        margin: 10px 0;
+        color: rgb(115, 115, 115);
+    }
+    & h3{
+        margin-top: 7px;
+        color: rgb(214, 19, 19);
+    }
+    & span{
+        text-decoration: line-through;
+    }
+}
+
+.discription{
+    margin: 1vw 0;
+    & .stock{
+        background-color: rgb(206, 255, 206);
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: rgb(0, 161, 0);
+        margin-bottom: 10px;
+    }
+    & p{
+        width: 70%;
+        font-size: 1vw;
+    }
+    & h4{
+        margin-bottom: 10px;
+    }
+}
+.sizes button{
+    background-color: transparent;
+    outline: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 4px;
+}
+
+.quantity-container{
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+    margin: 1vw 0;
+    & button{
+        padding: 0.4vw 1vw;
+        border-radius: 50%;
+        border: none;
+        font-size: 1.5vw;
+        background-color: #ebebeb;
+        cursor: pointer;
+    }
+    & p{
+        margin: 0 13px;
+        font-weight: 700;
+        font-size: 1.2vw;
+    }
+}
+.product_detail_cart{
+    padding: 0.6vw 2vw;
+    background-color: #8420cc;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
