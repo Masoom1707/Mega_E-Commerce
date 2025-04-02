@@ -32,12 +32,11 @@
         font-size: 1vw;
         text-transform: uppercase;
         font-weight: 700;
-        background-color: rgb(84, 19, 164);
+        background-color: #9626ec;
         border: none;
         color: white;
         border-radius: 2px;
         cursor: pointer;
-        
     }
     & p{
         text-align: center;
