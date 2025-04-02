@@ -68,9 +68,9 @@ const Header = () => {
           </div>
           <div className="lower2">
             <Link to="/">Home</Link>
-            <Link to="/fashion">Fashion</Link>
+            <Link to="/productlist">All Products</Link>
             <Link to="/new">New Arrivals</Link>
-            <Link to="/all">All Brands</Link>
+            <Link to="/all">Fashion</Link>
             <Link to="/more">More</Link>
           </div>
           <div className="lower3 common_display">

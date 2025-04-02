@@ -3,6 +3,10 @@
     padding: 3vw 4vw;
     gap: 2vw;
 }
+.product_info_detail h1{
+    width: 90%;
+    margin-bottom: 10px;
+}
 
 .product_image_sidebar{
     flex-basis: 25%;
@@ -60,24 +64,28 @@
         border-radius: 20px;
         text-transform: uppercase;
         color: rgb(0, 161, 0);
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     & p{
         width: 70%;
-        font-size: 1vw;
+        color: #6f6f71;
+        margin-bottom: 40px;
     }
     & h4{
         margin-bottom: 10px;
     }
 }
 .sizes button{
-    background-color: transparent;
     outline: none;
     padding: 8px 10px;
     cursor: pointer;
     margin: 0 5px;
-    border: 1px solid rgb(138, 138, 138);
+    border: 2px solid rgb(227, 208, 235);
     border-radius: 4px;
+}
+.activeSize{
+    background-color: #541095;
+    color: white;
 }
 
 .quantity-container{
@@ -108,8 +116,121 @@
     padding: 0.6vw 2vw;
     background-color: #8420cc;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     font-size: 0.9vw;
     cursor: pointer;
+    transition: all 0.1s linear;
+}
+.product_detail_cart:hover{
+    background-color: black;
+    color: white;
+}
+
+.more_detail_review{
+    width: 100%;
+    padding: 0 4%;
+    margin-bottom: 5vw;
+}
+
+
+.info-review_buttons{
+    & button{
+        padding: 10px 30px;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+} 
+.col-purple{
+    color: #8420cc;
+}
+
+.detail_box{
+    padding: 30px;
+    border-radius: 10px;
+    margin: 1vw 0;
+    width: 80%;
+    box-shadow: 2px -1px 10px 2px rgb(226, 226, 226);
+    & table{
+        width: 100%;
+    }
+}
+
+.header_table{
+    background-color: rgb(235, 235, 234);
+    text-align-last: left;
+    & th{
+        padding: 0.7vw 10px;
+    }
+    
+}
+
+
+tbody th{
+    padding: 10px 0;
+}
+
+.reviw_box{
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+.review_list{
+    width: 50%;
+    overflow-y: scroll;
+    max-height: 30vw;
+}
+.review_list::-webkit-scrollbar{
+    display: none;
+}
+.review_add{
+    width: 50%;
+    & textarea{
+        padding: 1vw;
+        font-size: 1vw;
+        width: 100%;
+        outline: none;
+        border: none;
+    box-shadow: 2px -1px 10px 2px rgb(226, 226, 226);
+        margin: 1vw 0;
+        border: 1px solid rgb(164, 162, 162);
+    }
+    & button{
+        float: right;
+        padding: 10px 20px;
+        background-color: #8420cc;
+        border: none;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+}
+
+.review_person{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 1vw;
+    & p{
+        width: 75%;
+        font-size: 15px;
+        margin-top: 10px;
+        color: #848484;
+    }
+}
+.review_profile{
+    background-color: rgb(20, 216, 105);
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+
+}
+
+.review-rating{
+    float: right;
 }

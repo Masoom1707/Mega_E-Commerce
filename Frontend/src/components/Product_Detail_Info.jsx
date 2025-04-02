@@ -4,6 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { LuShoppingCart } from "react-icons/lu";
 
 const ProductDetailInfo = () => {
+
   const [quantity, setQuantity] = useState(1);
   const handleIncQuantity = () => setQuantity(quantity + 1);
   const handleDecQuantity = () => {
@@ -13,9 +14,11 @@ const ProductDetailInfo = () => {
   const [addCart, setAddCart] = useState(false);
   const handleCart = () => setAddCart(true);
 
+  const [sizeSelect,setSizeSelected] = useState(null)
+
   return (
     <div className="product_info_detail">
-      <h1>ChickenKari Women Kurta</h1>
+      <h1>ChickenKari Women Kurta | Women Kurta Under 2000 | Special Price Offer | Eid Special</h1>
       <Rating name="size-small" defaultValue={4} size="small" readOnly />
       <div className="product_detail-price_container">
         <h3>$1200</h3>
@@ -39,11 +42,11 @@ const ProductDetailInfo = () => {
         </p>
       </div>
       <div className="sizes">
-        <button>S</button>
-        <button>M</button>
-        <button>L</button>
-        <button>XL</button>
-        <button>XXL</button>
+        <button className={sizeSelect == 0 ? 'activeSize' : ''} onClick={() => setSizeSelected(0)}>S</button>
+        <button className={sizeSelect == 1 ? 'activeSize' : ''} onClick={() => setSizeSelected(1)}>M</button>
+        <button className={sizeSelect == 2 ? 'activeSize' : ''} onClick={() => setSizeSelected(2)}>L</button>
+        <button className={sizeSelect == 3 ? 'activeSize' : ''} onClick={() => setSizeSelected(3)}>XL</button>
+        <button className={sizeSelect == 4 ? 'activeSize' : ''} onClick={() => setSizeSelected(4)}>XXL</button>
       </div>
       <div className="quantity-container">
         <div className="quantity">
@@ -57,6 +60,7 @@ const ProductDetailInfo = () => {
         </button>
         <FaRegHeart style={{ fontSize: "1.2vw", cursor: "pointer" }} />
       </div>
+      
     </div>
   );
 };

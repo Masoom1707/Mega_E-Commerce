@@ -9,7 +9,7 @@ import {IoGitCompareOutline} from 'react-icons/io5'
 
 const ProductList = () => {
   return (
-    <NavLink>
+    <NavLink to='/product-details/77'>
       <div className="product_items">
         <div className="image_wrapper">
             <img src="./public/images/15.jpg" alt="product" />
