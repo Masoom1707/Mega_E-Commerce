@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../css/header.css";
 import { FaRegHeart } from "react-icons/fa";
 import { LuShoppingCart } from "react-icons/lu";
@@ -29,9 +29,12 @@ const Header = () => {
     <>
       <div className="fixed">
         <div className="header_container common_display">
-          <div className="header1">
+          <NavLink to='/' className="header1">
+            <div className="logo">
+              <img src="./public/Images/levelup.jpg" alt="" srcset="" />
+            </div>
             <h2>Level-Up</h2>
-          </div>
+          </NavLink>
           <div className="header2">
             <input type="text" placeholder="Search Products here.." />
             <button>Search</button>
