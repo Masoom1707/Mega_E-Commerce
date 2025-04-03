@@ -1,6 +1,8 @@
 import "../css/cart_container.css";
-import Rating from "@mui/material/Rating";
-import {IoCloseCircleSharp} from 'react-icons/io5'
+import {BsFillBagCheckFill} from 'react-icons/bs'
+
+
+import CartItem from "../components/CartItem";
 
 const CartPage = () => {
   return (
@@ -8,33 +10,25 @@ const CartPage = () => {
       <div className="cart_right_side">
         <h2><span>4</span> Items in your cart</h2>
 
-        <div className="cart_list_section">
-          <div className="leftside">
-            <div className="img_container">
-              <img src="./public/Images/13.jpg" alt="" />
-            </div>
-          </div>
-          <div className="rightside">
-        <IoCloseCircleSharp style={{float:"right", fontSize:"1.4vw", cursor:"pointer"}} />
-            <h5>Levis</h5>
-            <h4>Pure Cotton Slim Fit Geometric Printed Casual Shirt</h4>
-            <Rating name="size-small" defaultValue={4} size="small" readOnly />
-            <div className="qty_size">
-              <button>Size: S</button>
-              <button>Qty: 1</button>
-            </div>
-            <div className="price">
-                <h5>$1,499</h5>
-                <h5 className="highPrice">$1,999</h5>
-            </div>
-          </div>
-        </div>
-
-      
-
+        <CartItem size='S' />
+        <CartItem size='M' />
+        <CartItem size='XL' />
 
       </div>
-      <div className="cart_left_side">raza</div>
+      <div className="cart_left_side">
+        <div className="price_breakout_section">
+          <h4>Price details (2 Items)</h4>
+          <div className="price_div">
+            <p>Total MRP <span>3,744</span></p>
+            <p>Discount on MRP <span className="free">2,744</span></p>
+            <p>Coupon Discount <span className="coupon">No Coupon</span></p>
+            <p>Platform Fee <span className="free">FREE</span></p>
+            <p>Shipping Fee <span className="free">FREE</span></p>
+          </div>
+          <h3>Total Amount <span>$1,744</span></h3>
+          <button><BsFillBagCheckFill style={{fontSize:"2.3vh"}} /> place order</button>
+        </div>
+      </div>
     </div>
   );
 };
