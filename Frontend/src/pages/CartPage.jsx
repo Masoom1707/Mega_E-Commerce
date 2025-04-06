@@ -3,6 +3,7 @@ import {BsFillBagCheckFill} from 'react-icons/bs'
 
 
 import CartItem from "../components/CartItem";
+import { NavLink } from "react-router-dom";
 
 const CartPage = () => {
   return (
@@ -26,7 +27,7 @@ const CartPage = () => {
             <p>Shipping Fee <span className="free">FREE</span></p>
           </div>
           <h3>Total Amount <span>$1,744</span></h3>
-          <button><BsFillBagCheckFill style={{fontSize:"2.3vh"}} /> place order</button>
+          <NavLink to='/checkout'><BsFillBagCheckFill style={{fontSize:"2.3vh"}} /> Checkout</NavLink>
         </div>
       </div>
     </div>

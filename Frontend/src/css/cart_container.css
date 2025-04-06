@@ -133,7 +133,9 @@
       & h3{
         padding: 15px;
       }
-      & button{
+      & a{
+        display: inline-block;
+        text-align: center;
         width: 100%;
         font-size: 17px;
         text-transform: uppercase;
@@ -143,9 +145,8 @@
         background-color: #741bd4;
         color: white;
         border: none;
-        cursor: pointer;
       }
-    & button:hover{
+    & a:hover{
         background-color: #450788;
     }
     & h4{

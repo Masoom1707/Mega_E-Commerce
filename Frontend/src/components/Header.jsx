@@ -1,22 +1,26 @@
 import { Link, NavLink } from "react-router-dom";
+import { useContext, useState } from "react";
+import { MyContext } from "../App";
+
 import "../css/header.css";
-import { FaRegHeart } from "react-icons/fa";
+
+import { FaRegHeart, FaRegUser } from "react-icons/fa";
 import { LuShoppingCart } from "react-icons/lu";
 import { MdOutlineFilterList } from "react-icons/md";
 import { GrDeliver } from "react-icons/gr";
-import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import { IoIosAdd, IoIosRemove } from "react-icons/io";
+import { IoIosAdd, IoIosLogOut, IoIosRemove, IoMdHeartEmpty } from "react-icons/io";
+import { IoBagCheckOutline } from "react-icons/io5";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const context = useContext(MyContext)
 
+  const [isOpen, setIsOpen] = useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
   const [moreItems, setMoreItems] = useState(null);
-
   const toggleMoreItems = (index) => {
     if(moreItems === index){
         setMoreItems(null)
@@ -24,6 +28,8 @@ const Header = () => {
         setMoreItems(index);
     }
   };
+
+  const [showProfileDrpDwn, setShowProfileDrpDwn] = useState(false);
 
   return (
     <>
@@ -40,9 +46,27 @@ const Header = () => {
             <button>Search</button>
           </div>
           <div className="header3">
+            {context.isLoggedIn === false ? 
+
             <div className="login">
               <Link to="/login">Login / Register</Link>
             </div>
+            : 
+            <button className="userProfile" onClick={() => setShowProfileDrpDwn(!showProfileDrpDwn)}>
+              <img src="./public/Images/19.jpg" alt="" />
+              {
+                showProfileDrpDwn && (
+                <div className="profileDrpDwn">
+                <NavLink to='/my-account'><FaRegUser /> <span>My Account</span></NavLink>
+                <NavLink to='/order'><IoBagCheckOutline /> <span>Orders</span></NavLink>
+                <NavLink to='/whishlist'><IoMdHeartEmpty /> <span>Wish List</span></NavLink>
+                <NavLink onClick={() => context.setIsLoggedIn(false)}><IoIosLogOut /> <span>Log Out</span></NavLink>
+                </div>
+                )
+              }
+            </button>
+
+            }
             <div className="icon">
               <div>
                 <Link to="/favrouites">
