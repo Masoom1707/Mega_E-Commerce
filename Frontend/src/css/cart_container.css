@@ -11,6 +11,7 @@
     & h2{
         position: sticky;
         top: 0;
+        z-index: 1;
         background-color: #ffffff;
         padding: 15px 0;
         text-transform: uppercase;
@@ -43,8 +44,8 @@
 .rightside{
     width: 100%;
 
-    & h4{
-        margin: 10px 0;
+    & h5{
+        margin: 5px 0;
         color: #5b5b5b;
     }
 }
@@ -54,11 +55,11 @@
     align-items: center;
   & > button{
     padding: 4px 9px;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 700;
     border: none;
     cursor: pointer;
-    margin: 15px 25px 15px 10px ;
+    margin: 10px 20px 10px 10px ;
     position: relative;
     background-color: #f0f0f0;
   }
@@ -75,7 +76,7 @@
     border-radius: 4px;
     border: none;
     background-color: #efefef;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
   }
@@ -137,9 +138,9 @@
         display: inline-block;
         text-align: center;
         width: 100%;
-        font-size: 17px;
+        font-size: 13px;
         text-transform: uppercase;
-        padding: 13px 0;
+        padding: 10px 0;
         border-radius: 4px;
         font-weight: 700;
         background-color: #741bd4;
@@ -158,10 +159,11 @@
 
 
 .price_div{
-    border-bottom: 3px solid rgb(225, 225, 225);
+    border-bottom: 2px solid rgb(225, 225, 225);
     & p{
         margin: 15px 20px;
         font-weight: 600;
+        font-size: 12px;
       }
       
       & .free{

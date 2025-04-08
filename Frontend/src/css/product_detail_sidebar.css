@@ -4,6 +4,7 @@
     gap: 2vw;
 }
 .product_info_detail h1{
+    font-size: 25px;
     width: 90%;
     margin-bottom: 10px;
 }
@@ -56,20 +57,22 @@
 }
 
 .discription{
-    margin: 1vw 0;
+    margin: 10px 0;
     & .stock{
         background-color: rgb(206, 255, 206);
         width: fit-content;
-        padding: 5px 10px;
+        padding: 4px 10px;
         border-radius: 20px;
         text-transform: uppercase;
+        font-size: 11px;
         color: rgb(0, 161, 0);
         margin-bottom: 20px;
     }
     & p{
         width: 70%;
         color: #6f6f71;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        font-size: 13px;
     }
     & h4{
         margin-bottom: 10px;
@@ -77,14 +80,20 @@
 }
 .sizes button{
     outline: none;
-    padding: 8px 10px;
+    padding: 5px 8px;
     cursor: pointer;
-    margin: 0 5px;
-    border: 2px solid rgb(227, 208, 235);
+    font-size: 10px;
+    margin: 0 4px;
+    background-color: #fff;
+    border: 1px solid rgb(125, 125, 125);
     border-radius: 4px;
 }
+.sizes button:hover{
+    background-color: #e4e4e4;
+
+}
 .activeSize{
-    background-color: #541095;
+    background-color: #6f16c2 !important;
     color: white;
 }
 
@@ -99,11 +108,11 @@
     align-items: center;
     margin: 1vw 0;
     & button{
-        padding: 0.4vw 1vw;
+        padding: 5px 9px;
         border-radius: 50%;
         border: none;
-        font-size: 1.5vw;
-        background-color: #ebebeb;
+        font-size: 1vw;
+        background-color: #f4f4f4;
         cursor: pointer;
     }
     & p{
@@ -137,7 +146,7 @@
 .info-review_buttons{
     & button{
         padding: 10px 30px;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 600;
         background-color: transparent;
         border: none;
@@ -164,14 +173,16 @@
     background-color: rgb(235, 235, 234);
     text-align-last: left;
     & th{
-        padding: 0.7vw 10px;
+        padding: 10px 8px;
+        font-size: 12px;
     }
     
 }
 
 
 tbody th{
-    padding: 10px 0;
+    padding: 8px 0;
+    font-size: 12px;
 }
 
 .reviw_box{
@@ -201,11 +212,11 @@ tbody th{
     }
     & button{
         float: right;
-        padding: 10px 20px;
+        padding: 8px 20px;
         background-color: #8420cc;
         border: none;
         color: white;
-        font-size: 15px;
+        font-size: 12px;
         cursor: pointer;
 
     }
@@ -214,19 +225,19 @@ tbody th{
 .review_person{
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 5px 0;
     gap: 1vw;
     & p{
         width: 75%;
-        font-size: 15px;
-        margin-top: 10px;
+        font-size: 12px;
+        margin-top: 8px;
         color: #848484;
     }
 }
 .review_profile{
     background-color: rgb(20, 216, 105);
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
 
 }

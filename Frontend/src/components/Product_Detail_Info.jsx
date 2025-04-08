@@ -58,7 +58,7 @@ const ProductDetailInfo = () => {
           <LuShoppingCart style={{ fontSize: "1vw" }} />
           {addCart ? "Item Added" : "Add to Cart"}
         </button>
-        <FaRegHeart style={{ fontSize: "1.2vw", cursor: "pointer" }} />
+        <FaRegHeart style={{ fontSize: "1vw", cursor: "pointer" }} />
       </div>
       
     </div>

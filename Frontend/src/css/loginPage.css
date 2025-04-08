@@ -15,20 +15,20 @@
     padding: 1vw;
     & input{
         width: 100%;
-        padding: 15px 15px;
+        padding: 10px 10px;
         font-size: 0.9vw;
         outline: none;
         border: none;
     }
     & a{
         display: inline-block;
-        font-size: 15px;
-        font-weight: 700;
+        font-size: 12px;
+        font-weight: 500;
         margin: 10px 0;
     }
     & button{
         width: 100%;
-        padding: 13px 0;
+        padding: 11px 0;
         font-size: 1vw;
         text-transform: uppercase;
         font-weight: 700;
@@ -39,6 +39,7 @@
         cursor: pointer;
     }
     & p{
+        font-size: 12px;
         text-align: center;
         margin: 10px 0;
     }
@@ -52,12 +53,13 @@
         justify-content: center;
         align-items: center ;
         gap: 10px;
+        font-size: 10px;
     }
     & div{
         display: flex;
         align-items: center;
         border: 2px solid rgb(216, 213, 213);
         margin: 15px 0;
-        padding-right: 15px;
+        padding-right: 10px;
     }
 }

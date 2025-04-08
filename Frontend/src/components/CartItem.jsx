@@ -38,9 +38,9 @@ const CartItem = (props) => {
 </div>
 <div className="rightside">
 <IoCloseCircleSharp style={{float:"right", fontSize:"1.4vw", cursor:"pointer"}} />
-  <h5>Levis</h5>
-  <NavLink to='/product-details/77'><h4>Pure Cotton Slim Fit Geometric Printed Casual Shirt</h4></NavLink>
-  <Rating name="size-small" defaultValue={4} size="small" readOnly />
+  <h6>Levis</h6>
+  <NavLink to='/product-details/77'><h5>Pure Cotton Slim Fit Geometric Printed Casual Shirt</h5></NavLink>
+  <Rating name="size-small" defaultValue={4} style={{fontSize:"12px"}} size="small" readOnly />
   <div className="qty_size">
 
     <button onClick={handleSizeDropClick}>Size: {selectSize} <GoTriangleDown />

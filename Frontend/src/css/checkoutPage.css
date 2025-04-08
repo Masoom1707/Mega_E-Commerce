@@ -14,17 +14,17 @@
     flex-basis: 65%;
     padding: 2%;
     & form{
-        padding: 25px 15px;
+        padding: 15px;
         border: 2px solid rgb(233, 233, 233);
     }
     & input {
         width: 100%;
         background-color: rgb(244, 244, 244);
-        padding: 12px;
+        padding: 8px;
         border: none;
         outline: none;
         margin: 12px 0;
-        font-size: 15px;
+        font-size: 13px;
     }
     & input:hover{
         outline: 2px solid rgb(179, 179, 179);
@@ -32,10 +32,10 @@
     }
     & .halfInp input{
         width: 49%;
-        padding: 12px;
+        padding: 8px;
     }
     & .halfInp input:first-child{
-        margin-right: 20px;
+        margin-right: 15px;
     }
     & h4{
         margin: 8px 0;
@@ -55,16 +55,18 @@
     border: 3px solid rgb(238, 238, 238);
     & > h3{
         margin: 12px 0;
-        padding-bottom: 10px;
-        border-bottom: 2px solid rgb(150, 150, 150);
+        padding-bottom: 8px;
+        font-size: 13px;
+        border-bottom: 2px solid rgb(221, 221, 221);
     }
     & > h2{
-        padding: 10px 0;
-        border-bottom: 2px solid rgb(150, 150, 150);
+        padding: 8px 0;
+        border-bottom: 2px solid rgb(221, 221, 221);
 
     }
     & span{
         float: right;
+        font-size: 12px;
     }
     & .product_container{
         max-height: 48vh;
@@ -76,33 +78,35 @@
     & .checkout_img_container{
         width: 20%;
         height: 10vh;
-        border-radius: 7px;
         & img{
             width: 100%;
             height: 100%;
             object-fit: cover;
+
         }
     }
     & .product_div{
         display: flex;
-        gap: 15px;
-        margin: 15px 0;
+        gap: 12px;
+        margin: 12px 0;
     }
     & .title{
         width: 100%;
         & h3{
+            font-size: 15px;
             margin-bottom: 10px;
         }
         & p{
+            font-size: 12px;
             color: #626262;
         }
     }
     & button{
         width: 100%;
-        padding: 15px 0;
+        padding: 11px 0;
         text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 700;
+        font-size: 12px;
+        font-weight: 500;
         border: none;
         color: white;
         cursor: pointer;
