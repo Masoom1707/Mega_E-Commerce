@@ -97,22 +97,23 @@
 .product_details{
   width: 100%;
   height: 30%;
-  padding: 0.3vw 1vw;
+  padding: 8px 15px;
 }
 
 .product_details h2{
-  font-size: 0.9vw;
+  font-size: 1vw;
   color: #252424;
   transition: all 0.2s ease-in;
 
 }
 .product_details h2:hover{
-  color: #937ea5;
+  color: #a4a4a4;
 }
 
 .product_details h4{
-  color: rgb(255, 30, 30);
-  margin: 0.5vw 0;
+  color: rgb(222, 15, 15);
+  margin: 5px 0;
+  font-size: 12px;
 }
 
 .old_price{
@@ -125,10 +126,10 @@
 
 .icon_list{
   display: flex;
-  gap: 0.4vw;
+  gap: 5px;
   position: absolute;
   top: 80%;
-  left: 10%;
+  left: 11px;
 }
 .icon_list button{
   background-color: #fff;

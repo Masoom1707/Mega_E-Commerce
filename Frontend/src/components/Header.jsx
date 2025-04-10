@@ -100,7 +100,7 @@ const Header = () => {
                     <NavLink to="/my-account">
                       <FaRegUser /> <span>My Account</span>
                     </NavLink>
-                    <NavLink to="/order">
+                    <NavLink to="/my-orders">
                       <IoBagCheckOutline /> <span>Orders</span>
                     </NavLink>
                     <NavLink to="/whishlist">

@@ -67,7 +67,7 @@ const Footer = () => {
                 
             </div>
             <div className="copyright">
-                <FaRegCopyright />
+                <FaRegCopyright style={{fontSize:"12px"}} />
                 <span> 2025 - Level-Up.com</span>
             </div>
         </div>

@@ -1,5 +1,4 @@
 import Rating from "@mui/material/Rating";
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 import { MdZoomOutMap } from "react-icons/md";
@@ -29,7 +28,7 @@ const ProductList = () => {
           <h4>
             <span className="old_price">$40</span> $20
             <Rating
-              style={{ float: "right" }}
+              style={{ float: "right", fontSize:"13px" }}
               name="size-small"
               defaultValue={4}
               size="small"

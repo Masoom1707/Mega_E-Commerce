@@ -13,6 +13,7 @@ import CartPage from "./pages/CartPage";
 import ForgotPass from "./pages/ForgotPass";
 import CheckoutPage from "./pages/CheckoutPage";
 import AccountPage from "./pages/AccountPage";
+import OrderHistory from "./pages/OrderHistory";
 
 
  const MyContext = createContext()
@@ -42,6 +43,7 @@ function App() {
         <Route path='/cart' exact={true} element={<CartPage />} />
         <Route path='/checkout' exact={true} element={<CheckoutPage />} />
         <Route path='/my-account' exact={true} element={<AccountPage />} />
+        <Route path='/my-orders' exact={true} element={<OrderHistory />} />
       </Routes>
       <Footer />
       </MyContext.Provider>

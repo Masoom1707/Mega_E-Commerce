@@ -1,0 +1,56 @@
+.orderHistory{
+    padding: 3%;
+}
+
+.orderTable{
+    background-color: #fff;
+    box-shadow: 2px -1px 10px 2px rgb(237, 237, 237);
+    padding: 15px 25px;
+    height: 75vh;
+    overflow: scroll;
+    & h3{
+        margin-bottom: 10px;
+    }
+    & h4{
+        color: #767676d5;
+        margin-bottom: 20px;
+    }
+    & h4 span{
+        color: #8f17cb;
+    }
+}
+
+.header_table{
+    & th{
+        padding: 8px 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: #eef9ff;
+        white-space: nowrap;
+    }
+   
+}
+tbody td{
+    font-size: 14px;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.status{
+    padding: 5px 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.red{
+    background-color: rgb(255, 23, 23);
+}
+.yellow{
+    background-color: rgb(206, 206, 0);
+}
+.green{
+    background-color: rgb(28, 195, 28);
+}
