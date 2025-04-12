@@ -49,7 +49,7 @@ const userSchema = new mongoose.Schema(
     shoppingCart: [
       {
         type: mongoose.Schema.ObjectId,
-        ref: "cartProduct",
+        ref: "cart",
       },
     ],
     orderHistory: [
@@ -58,6 +58,10 @@ const userSchema = new mongoose.Schema(
         ref: "order",
       },
     ],
+    
+    otp:String,
+    otpExpiresAt:Date,
+
     forgotPasswordOtp: {
       type: String,
       default: null,
