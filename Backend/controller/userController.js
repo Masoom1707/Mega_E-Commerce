@@ -584,3 +584,92 @@ export const resetPassword = async (req, res) => {
     });
   }
 };
+
+export const refreshToken = async (req, res) => {
+  try {
+    const refreshToken =
+      req.cookies.refreshToken || req?.headers?.authorization?.split(" ")[1];
+
+    if (!refreshToken) {
+      return res.status(400).json({
+        message: "Invalid Token",
+        error: true,
+        success: false,
+      });
+    }
+
+    const verifyToken = jwt.verify(
+      refreshToken,
+      process.env.SECRET_REFRESH_CODE
+    );
+    if (!verifyToken) {
+      return res.status(400).json({
+        message: "Invalid Token",
+        error: true,
+        success: false,
+      });
+    }
+
+    const userId = verifyToken?._id;
+
+    if (!userId) {
+      return res.status(400).json({
+        message: "Invalid Token Payload",
+        error: true,
+        success: false,
+      });
+    }
+
+    const newAccessToken = await generateAccessToken(userId);
+
+    const cookieOptions = {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "strict",
+    };
+
+    res.cookie("accessToken", newAccessToken, cookieOptions);
+
+    return res.status(200).json({
+      message: "new acces Token generated",
+      error: false,
+      success: true,
+      data: {
+        accessToken: newAccessToken,
+      },
+    });
+  } catch (error) {
+    return res.status(500).json({
+      message: "Internal Server Error",
+      error: error.message || error,
+      success: false,
+    });
+  }
+};
+
+// for getting the login user details
+export const userDetails = async (req, res) => {
+  try {
+    const userId = req.userId;
+
+    const User = await user.findById(userId).select("-password -refreshToken");
+
+    return res
+      .status(200)
+      .json({
+        message: "User Details",
+        data: User,
+        success: true,
+        error: false,
+      });
+  } catch (error) {
+    return res
+      .status(500)
+      .json({
+        message: "Internal server error",
+        data: null,
+        success: false,
+        error: true,
+      });
+  }
+};

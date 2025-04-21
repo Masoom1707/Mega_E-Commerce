@@ -4,10 +4,12 @@ import {
   forgotPassword,
   loginController,
   logoutController,
+  refreshToken,
   registerUser,
   removeImgfromCloudinary,
   resetPassword,
   updateProfile,
+  userDetails,
   verifyEmail,
   verifyForgotPassword,
 } from "../controller/userController.js";
@@ -34,3 +36,5 @@ userRouter.put("/:id/update", authMiddleware, updateProfile);
 userRouter.post("/forgot-password", forgotPassword);
 userRouter.post("/verify-forgot-password", verifyForgotPassword);
 userRouter.post("/reset-password", resetPassword);
+userRouter.post("/verify-token", refreshToken);
+userRouter.get("/user-details", userDetails);
