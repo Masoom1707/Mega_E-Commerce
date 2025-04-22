@@ -1,0 +1,122 @@
+a{
+    color: black;
+}
+
+.fixed{
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo{
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  margin-right: 10px;
+  & img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.header1{
+  display: flex;
+  align-items: center;
+}
+
+.common_display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1 h2{
+    font-size: 2vw;
+}
+
+.header_container{
+    background-color: #fff;
+    padding: 10px 5vw;
+    border-bottom: 2px solid rgb(184, 184, 184);
+}
+.header3{
+    display: flex;
+    align-items: center;
+}
+.login{
+    margin-right: 1vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-right: 2px solid rgb(228, 227, 227);
+    padding-right: 1vw;
+}
+
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.header-icon{
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+}
+.icondiv{
+    margin-left: 1.5vw;
+}
+.badge{
+    background-color: #9b39e6be;
+    height: 1vw;
+    width: 1vw;
+    position: relative;
+    border-radius: 50%;
+    top: -0.3vw;
+    left: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.7vw;
+}
+
+
+.userProfile{
+    background-color: red;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    & img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+.profileDrpDwn{
+  width:max-content;
+  background-color: #fff;
+  position: absolute;
+  right: -100%;
+  top: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  & a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+  }
+  & a:hover{
+    background-color: #e9e9e9;
+  }
+}

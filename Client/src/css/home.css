@@ -1,0 +1,158 @@
+.home_container{
+  display: flex;
+  background-color: #b5b5b554;
+}
+
+.Home_Left_Sidebar{
+  flex-basis: 15%;
+  background-color: #ffffffd1;
+  & .sidebarItmes{
+    padding: 12px 17px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    & p{
+      margin-left: 10px;
+    }
+  }
+  & .sidebarItmes:hover{
+    background-color: #b5b5b554;
+  }
+}
+ span{
+  float: right;
+}
+
+.listItmes{
+  background-color: #f0f0f0ea;
+  font-size: 12px;
+  font-weight: 500;
+  & a{
+    display: block;
+    padding: 5px 10px 5px 40px;
+  }
+  & a:hover{
+    background-color: #e3e3e3;
+  }
+}
+
+.Home_Right_Sidebar{
+  padding: 15px 25px;
+  flex-basis: 85%;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.welcome_box{
+  background-color: #fff;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & p{
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  & button{
+    padding: 7px 15px;
+    border: none;
+    background-color: #9b11bd;
+    color: white;
+    cursor: pointer;
+  }
+  & button:hover{
+    background-color: #850fa2;
+  }
+}
+
+.profileCont{
+  background-color: #d4112e;
+  width: 10vw;
+  height: 10vw;
+  & img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.card_section{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 25px;
+  & .title{
+    font-size: 12px;
+  }
+  & a{
+  background-color: #fff;
+    display: flex;
+    padding: 13px 15px;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+
+
+
+.orderTable{
+  background-color: #fff;
+  box-shadow: 2px -1px 10px 2px rgb(237, 237, 237);
+  padding: 15px 25px;
+  max-height: 70vh;
+  overflow: scroll;
+  & h3{
+      margin-bottom: 7px;
+  }
+  & h4{
+      color: #bebebeef;
+      margin-bottom: 20px;
+  }
+  & h4 span{
+      color: #8f17cb;
+  }
+}
+
+.header_table{
+  & th{
+      padding: 8px 20px;
+      font-size: 12px;
+      text-transform: uppercase;
+      background-color: #eef9ff;
+      white-space: nowrap;
+  }
+ 
+}
+tbody td{
+  font-size: 14px;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.status{
+  padding: 5px 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+.red{
+  background-color: rgb(255, 23, 23);
+}
+.yellow{
+  background-color: rgb(206, 206, 0);
+}
+.green{
+  background-color: rgb(28, 195, 28);
+}
+
+.producttable{
+  background-color: #fff;
+  margin-bottom: 4vw;
+}
